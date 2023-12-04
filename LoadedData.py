@@ -93,7 +93,7 @@ def main():
     print(f"The average you can make for doing all the listings in any given day is ${dailyAvg}")
     print(f"The lowest possible average you can make daily is ${minDailyAvg}")
     print(f"The maximum possible average you can make daily is ${maxDailyAvg}")
-    print(minPerHour)
-    print(maxPerHour)
+    #print(minPerHour)
+    #print(maxPerHour)
 
 main()
