@@ -21,5 +21,4 @@ would get the first occurrence of a two-digit which corresponded to the minimum 
 Next, I essentially did the same thing to get the maximum possible pay per hour. Except for this I collected all instances 
 of two-digit numbers and selected the highest one. At this point I averaged out how much I could make on each day hourly and saved that
 to a dictionary with the date as the key and average on that day as the value. Once I had this, I then calculated how much
-I could make daily if each job was one hour, eight hours, and a random number of hours between 1 and 8. </h4>
-
+I could make daily if each job was one hour, eight hours, and a random number of hours between 1 and 8.</h4>

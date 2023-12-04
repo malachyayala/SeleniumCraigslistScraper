@@ -76,12 +76,3 @@ def main():
 
 main()
 
-
-"""
-This was going to be a process so I knew I had to break it down. First I decided which listings I was specifically going to look at. I decided on listings that had the pay clearly stated in the listing as "compensation."
-
-Next I had to figure out how to get this payment data from each listing. First I figured out a way to get each listing as an element in a list so I could access the title, date posted, and compensation. I did this by finding all instances of classes that contained a 
-listing, which in this case was a "result-info" class. Next I had to figure out how to extract only the just the compensation part of each listing. To do so I did a similar process and found the class containing all the compensation info. The issue I had here was
-that I also got how long ago the posting was made as part of my result. However, this was very easy to work around and I just split the string and selected which part I wanted. 
-"""
-
