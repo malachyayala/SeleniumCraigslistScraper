@@ -56,13 +56,14 @@ def getMaxPerListing():
             value_after_date = max(matches)
             result.append([item[0], value_after_date])
     return result
-def avgPerDay(listingData):
+def calculateAvgPerDay(listingData):
     """
     Calculates the daily average o
     :param listingData: List of lists containing clean listing data
     :return: List
     """
     earningsPerDay = {}
+    # Adds date and average for that day to a dictionary
     for post in listingData:
         date, earnings = post
         earnings = int(earnings)
@@ -85,8 +86,8 @@ def avgPerDay(listingData):
     return [avgPerDayResult, [minEarningsPerDay, maxEarningsPerDay, randomEarningsPerDay]]
 
 def main():
-    maxPerHour = avgPerDay(getMaxPerListing())
-    minPerHour = avgPerDay(getMinPerListing())
+    maxPerHour = calculateAvgPerDay(getMaxPerListing())
+    minPerHour = calculateAvgPerDay(getMinPerListing())
     dailyAvg = round((minPerHour[0] + maxPerHour[0]) / 2)
     minDailyAvg = round((minPerHour[1][0] + maxPerHour[1][0]) / 2)
     maxDailyAvg = round((minPerHour[1][1] + maxPerHour[1][1]) / 2)

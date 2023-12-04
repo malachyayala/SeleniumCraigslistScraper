@@ -34,8 +34,7 @@ class CraigslistScraper:
         for listing in listings:
             #listingPay = listing.find_element(By.CLASS_NAME, "meta").text.split("·")[1]
             listingPay = listing.find_element(By.CLASS_NAME, "meta").text
-            if "hour" in listingPay or "hr" in listingPay:
-                self.listingCompensation.append(listingPay)
+            self.listingCompensation.append(listingPay)
 
     def clickNextPage(self) -> None:
         """
